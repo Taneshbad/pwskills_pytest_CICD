@@ -46,7 +46,7 @@ def when_divide(context):
 
 
 # ── Then steps ──
-@then(parsers.parse('the result should be {expected:f}'))
+@then(parsers.parse('the result should be {expected:d}'))
 def check_result(context, expected):
     assert context["result"] == expected
 
